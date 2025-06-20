@@ -16,3 +16,50 @@ Application web (Blazor Server) avec backend ASP.NET Core pour gestion de contac
 1. Cloner ce repository  
 ```bash
 git clone https://github.com/ya-repillez/CRM_App.git
+
+
+CRM_App/
+├── README.md
+├── CarnetContacts.sln
+├── /CarnetContacts.API/
+│   ├── CarnetContacts.API.csproj
+│   ├── Program.cs
+│   ├── appsettings.json
+│   ├── Controllers/
+│   │   ├── ContactsController.cs
+│   │   ├── InteractionsController.cs
+│   │   ├── TagsController.cs
+│   │   └── AuthController.cs
+│   ├── Data/
+│   │   ├── ApplicationDbContext.cs
+│   │   ├── Entities/
+│   │   │   ├── Contact.cs
+│   │   │   ├── Interaction.cs
+│   │   │   ├── Tag.cs
+│   │   │   └── User.cs
+│   │   └── Migrations/
+│   └── Services/
+│       ├── OutlookService.cs
+│       └── AuthService.cs
+├── /CarnetContacts.Web/
+│   ├── CarnetContacts.Web.csproj
+│   ├── Program.cs
+│   ├── Pages/
+│   │   ├── Index.razor
+│   │   ├── Contacts.razor
+│   │   ├── Interactions.razor
+│   │   ├── Tags.razor
+│   │   └── Login.razor
+│   ├── Shared/
+│   │   ├── MainLayout.razor
+│   │   └── NavMenu.razor
+│   └── wwwroot/
+│       └── css/
+│           └── site.css
+├── /SQL/
+│   ├── CreateDatabase.sql
+│   ├── Tables.sql
+│   └── SeedData.sql
+└── /Docs/
+    ├── DatabaseSchema.png
+    └── ArchitectureDiagram.png
